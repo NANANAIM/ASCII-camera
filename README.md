@@ -2,7 +2,7 @@
 ASCII render en vivo desde tu cámara usando el navegador.
 
 ## Probar online
-Abre la demo aquí: https://nananaim.github.io/ASCII-camera/
+https://nananaim.github.io/ASCII-camera/
 
 ![alt text](image-1.png)
 
