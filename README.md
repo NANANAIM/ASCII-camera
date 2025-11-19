@@ -1,7 +1,7 @@
 # ASCII Camera
 ASCII render en vivo desde tu cámara usando el navegador.
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 ## Requisitos
 - Un navegador moderno (Chrome, Edge, Firefox). 
