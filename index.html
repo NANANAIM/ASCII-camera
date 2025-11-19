@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ASCII Camera</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>ASCII Camera</h1>
+    <div class="controls">
+      <button id="startBtn">Iniciar cámara</button>
+      <button id="stopBtn" disabled>Detener</button>
+      <label>
+        Densidad:
+        <input id="scaleRange" type="range" min="0.2" max="2.0" step="0.1" value="1.0" />
+        <output id="densityOut">1.0x</output>
+      </label>
+      <label>
+        Ancho (cols):
+        <input id="colsInput" type="number" min="40" max="240" step="10" value="120" />
+      </label>
+      <label>
+        Charset:
+        <select id="charsetSelect">
+          <option value=" .:-=+*#%@">Ligero → denso</option>
+          <option value=" .'`^\",:;Il!i~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$">Extenso</option>
+        </select>
+      </label>
+      <label>
+        Invertir:
+        <input id="invertCheckbox" type="checkbox" />
+      </label>
+      <label>
+        Fondo:
+        <input id="bgColor" type="color" value="#0e0e10" />
+      </label>
+      <label>
+        Principal:
+        <input id="fgColor" type="color" value="#e6e6e6" />
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <div id="stage" class="stage">
+      <pre id="ascii"></pre>
+    </div>
+  </main>
+
+  <video id="video" autoplay playsinline muted hidden></video>
+  <canvas id="work" hidden></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
